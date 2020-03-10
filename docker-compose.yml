@@ -18,4 +18,4 @@ services:
       context: proxy/
       dockerfile: Dockerfile
       args:
-        YOURAPP_ENV: "LW4ga29sYQo="
+        YOURAPP_ENV: "LW4gaGFwcHkK"

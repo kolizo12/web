@@ -1,5 +1,5 @@
 FROM nginx
-RUN apt-get update && apt-get install curl apache2-utils -y && htpasswd -bc /etc/nginx/.htpasswd username password
+RUN apt-get update && apt-get install apache2-utils -y && htpasswd -bc /etc/nginx/.htpasswd username password
 #  default conf for proxy service
 
 ARG YOURAPP_ENV=production
