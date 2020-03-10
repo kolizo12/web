@@ -1,6 +1,6 @@
 # web
 
-Setup a virtual environment using venv on your local machine{Optional}. 
+Setup a virtual environment using venv on your local machine{OPTIONAL}. 
 Git clone the repository to the virutal environment.
 
 Run the command <pre>sh secret.sh</pre> and when prompted, hit enter.
