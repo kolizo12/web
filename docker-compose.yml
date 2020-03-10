@@ -16,6 +16,6 @@ services:
     - "443:443"
     build:
       context: proxy/
-
-
- 
+      dockerfile: Dockerfile
+      args:
+        YOURAPP_ENV: "LW4ga29sYQo="
