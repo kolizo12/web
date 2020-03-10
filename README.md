@@ -20,3 +20,8 @@ add the token to YOURAPP_ENV
  
  
  password: password
+
+
+usage
+
+localhost/{TOKEN}
