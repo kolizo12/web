@@ -8,7 +8,9 @@ sh secret.sh
 
 
 It spits out the url with token
+
 open the web/docker-compose.yml
+
 add the token to YOURAPP_ENV
  
  
