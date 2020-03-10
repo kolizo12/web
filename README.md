@@ -3,8 +3,9 @@
 After downloading the repo
 run the secret.sh 
 
-
+<pre>
 sh secret.sh 
+<br /></pre>
 
 
 It spits out the url with token
