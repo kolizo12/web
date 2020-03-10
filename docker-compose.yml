@@ -1,19 +1,21 @@
 version: '3'
 services:
   app:
-    build: ./web
     ports:
     - "80"
-    volumes:
-    - .:/usr/share/nginx/html/
+    build:
+      context: web/ 
+      dockerfile: Dockerfile
+
 
   proxy:
-    build: ./proxy
     depends_on:
       - app
     ports:
     - "80:80"
     - "443:443"
+    build:
+      context: proxy/
 
 
  
