@@ -29,18 +29,24 @@ localhost/{TOKEN}
 </pre>
 
 DESIGN
+
+
 ++++
 
 Short doc describing names, ports, paths, and other aspects we may need to know to use
 the solution
+
+
 <pre>
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                      NAMES
 74ced6be57ed        web_proxy           "nginx -g 'daemon of…"   4 hours ago         Up 4 hours          0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   web_proxy_1
 e3eae4f50a22        web_app             "nginx -g 'daemon of…"   5 hours ago         Up 5 hours          0.0.0.0:32776->80/tcp                      web_app_1
 </pre>
-Launching this should generate two containers the web_proxy is tied to the host at port 80 and 443, while the web_app is exposed at 80 and can be a randon port from the host.
 
-The Dockerfile at the proxy directory accepts an ARG and an ENV which is passed to the defaut.conf of the proxy server and subs out the "SECRET" for the token generated.
+
+Launching this should generate two containers. The web_proxy is tied to the host at port 80 and 443, while the web_app is exposed at 80 not tied to any host port.
+
+The Dockerfile at the proxy directory accepts an ARG and an ENV which is passed to the defaut.conf of the proxy server and used to subs out the "SECRET" for the token generated.
 
 This part in the Dockerfile is used to generate the password and username
 
