@@ -6,7 +6,7 @@ Git clone the repository to the virutal environment.
 Run the command <pre>sh secret.sh</pre> and when prompted, hit enter.
 It spits out the url with token to be used for testing later so do save it.
 
-Open the web/docker-compose.yml
+Open the root docker-compose.yml
 
 Add the token generated above after the url to YOURAPP_ENV.
 Please see the example below:
