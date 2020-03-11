@@ -29,7 +29,23 @@ localhost/{TOKEN}
 </pre>
 
 DESIGN
-
+<pre>
+WEB---------> PROXY
+                |--> Dockerfile
+                |--> docker-compose.yml
+                |--> default.conf
+                |--> backend-not-found.html
+                |--> SSL
+                      |--> web.crt
+                      |--> web.key
+      |-----> WEB
+                |--> Dockerfile
+                |--> docker-compose.yml
+                |--> index.html
+      |-----> README
+      |-----> docker-compose.yml
+      |-----> secret.sh
+</pre>
 
 ++++
 
