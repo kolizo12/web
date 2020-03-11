@@ -37,7 +37,7 @@ WEB---------> PROXY
       |          |--> backend-not-found.html
       |          |--> SSL
       |               |--> web.crt
-      |                |--> web.key
+      |               |--> web.key
       |-----> WEB
       |          |--> Dockerfile
       |          |--> docker-compose.yml
